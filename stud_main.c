@@ -12,33 +12,33 @@ int main(){
         scanf(" %c",&op);
         switch(op){
             case 'a':
-            case 'A':   // Add a new record
+            case 'A': //add a new record
                 add(&head);break;  
             case 'd':
-            case 'D':   // Delete a specific record
+            case 'D': //delete a specific record
                 del(&head);break;  
             case 's':
-            case 'S':   // Display all records
+            case 'S': //display all records
                 display(head);break;
             case 'm':
-            case 'M':   // Modify a specific record
+            case 'M': //Modify a specific record
                 modify(&head);break; 
             case 'v':
-            case 'V':   // Save the data to a file
+            case 'V':  //save the data to a file
                 save_file(head);break; 
             case 't':
-            case 'T':   // Sort the database records
+            case 'T'://Sort the database records
                 sort(&head);break;
                 
             case 'l':
-            case 'L':   // Delete all database records
+            case 'L': //Delete all database records
                 del_all(&head);break;
                 
             case 'r':
-            case 'R':   // Reverse the linked list
+            case 'R'://reverse the linked list
                 rev(&head);break; 
             case 'e': 
-            case 'E':   //Exit
+            case 'E'://Exit
                 return 0;
             default: printf("\033[31;1;4;5mUnknow Option\033[0m\n");
         }
